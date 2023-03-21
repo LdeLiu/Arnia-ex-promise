@@ -1,0 +1,43 @@
+body{
+    padding: 1rem;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.sec1,.sec2{
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+
+
+.container{
+    background-color:#E9E9E9;
+    border: solid 1px #777777;
+    border-radius: 1rem;
+
+    padding: 2rem;
+
+    gap: 2rem;
+
+    width: 30rem;
+}
+
+.container img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container .descriptions{
+    padding: 0.5rem;
+
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container .descriptions ul h3{
+    font-size: 1.3rem;
+}

@@ -1,0 +1,16 @@
+criar uma classe personagems
+	a classe ira conter: nome(h2),foto(img),revistas(array),series(array)
+
+Apos chamar a api e receber a resposta:
+    Salvar os dados do Data.result em uma variavel. (sera a lista de herois)
+    Criar um for/foreach para instanciar cada objeto personagem e salvar em um array
+ 
+
+nv-1: 
+    Criar no html cada bloco para cada personagem, utilizar id/classes com o mesmo nome acrecenando um valor no final (1,2,3,etc)
+
+    com um for, chamar os dados que serão alterados utilizando o i para selecionar de qual heroi será. 
+
+    ainda no for ir alterando as informaçoes do html, utilizando o i para selecionar qual indice do array ire utilizar.
+
+    
