@@ -1,12 +1,12 @@
+/* reset de possiveis atributos padrões do navegador */
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
+
+/*classes comuns*/
 .d-flex{
     display: flex;
-}
-.d-il-block{
-    display: inline-block;
 }

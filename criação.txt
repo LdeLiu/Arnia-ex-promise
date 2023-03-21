@@ -12,5 +12,3 @@ nv-1:
     com um for, chamar os dados que serão alterados utilizando o i para selecionar de qual heroi será. 
 
     ainda no for ir alterando as informaçoes do html, utilizando o i para selecionar qual indice do array ire utilizar.
-
-    
