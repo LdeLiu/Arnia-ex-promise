@@ -28,19 +28,19 @@ promise.then(respostaDoServidor => {
             const resultado = respostaTratada.data.results
             resultado.forEach((element) => {
                 //criando novo personagem
-                let teste = new personagens
+                let hero = new personagens
                 //atribuindo nome
-                teste.nome = element.name
+                hero.nome = element.name
                 //atribuindo imagem
-                teste.img = element.thumbnail.path
+                hero.img = element.thumbnail.path
 
                 //salvando as revistas e series (2 primeiras), usando o indice para alterar qual indice estou pegando.
                 for(let i = 0 ; i < 2 ; i++){
-                    teste.revistas.push(element.comics.items[i].name)
-                    teste.series.push(element.series.items[i].name)
+                    hero.revistas.push(element.comics.items[i].name)
+                    hero.series.push(element.series.items[i].name)
                 }
 
-                arrayDePersonagens.push(teste)
+                arrayDePersonagens.push(hero)
             });
 
 
