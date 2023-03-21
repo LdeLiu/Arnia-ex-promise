@@ -34,7 +34,7 @@ promise.then(respostaDoServidor => {
                 //atribuindo imagem
                 teste.img = element.thumbnail.path
 
-                //salvando as revistas e series (2 primeiras)
+                //salvando as revistas e series (2 primeiras), usando o indice para alterar qual indice estou pegando.
                 for(let i = 0 ; i < 2 ; i++){
                     teste.revistas.push(element.comics.items[i].name)
                     teste.series.push(element.series.items[i].name)
@@ -48,19 +48,19 @@ promise.then(respostaDoServidor => {
             //for para cada personagem no array
             for(let i = 0 ; i < arrayDePersonagens.length ; i++){
             
-                //essas classes servem apenas para auxiliar na seleção de qual tag estou chamando
+                //essas variaveis servem apenas para auxiliar na seleção de qual tag estou chamando
                 let className = ".nome-"
                 let imgName = ".img-"
                 let rev = [".r1-",".r2-"]
                 let ser = [".s1-",".s2-"]
 
                 //chamando as tags (temporeriamente, apenas dentro do loop)
-                const nome = body.querySelector(className+i)
-                const img = body.querySelector(imgName+i)
-                const r1 = body.querySelector(rev[0]+i)
-                const r2 = body.querySelector(rev[1]+i)
-                const s1 = body.querySelector(ser[0]+i)
-                const s2 = body.querySelector(ser[1]+i)
+                const nome = body.querySelector(className+i) //nome/h2
+                const img = body.querySelector(imgName+i)   //imagem
+                const r1 = body.querySelector(rev[0]+i)     //revista1
+                const r2 = body.querySelector(rev[1]+i)     //revista2
+                const s1 = body.querySelector(ser[0]+i)     //serie1
+                const s2 = body.querySelector(ser[1]+i)     //serie2
 
                 //atribuindo o nome ao h2
                 nome.innerText = arrayDePersonagens[i].nome
